@@ -729,7 +729,7 @@ package body Libraries is
 
       --  This is a new library.
       if Ident = Std_Names.Name_Std then
-         --  Load_std_library must have been called before.
+         --  Load_Std_library must have been called before.
          raise Internal_Error;
       end if;
 
