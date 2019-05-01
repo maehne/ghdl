@@ -500,7 +500,7 @@ package body Ghdllocal is
       Put (Name_Table.Image (Get_Library_Directory (Lib)));
       New_Line;
 
-      --  Disp contents of files.
+      --  Display contents of files.
       File := Get_Design_File_Chain (Lib);
       while File /= Null_Iir loop
          Unit := Get_First_Design_Unit (File);
@@ -566,7 +566,7 @@ package body Ghdllocal is
    is
       pragma Unreferenced (Cmd);
    begin
-      return "--dir [LIBs]       Disp contents of the libraries";
+      return "--dir [LIBs]       Display contents of the libraries";
    end Get_Short_Help;
 
    procedure Perform_Action (Cmd : Command_Dir; Args : Argument_List)
@@ -601,7 +601,7 @@ package body Ghdllocal is
    is
       pragma Unreferenced (Cmd);
    begin
-      return "-f FILEs           Disp units in FILES";
+      return "-f FILEs           Display units in FILES";
    end Get_Short_Help;
 
    --  Return TRUE is UNIT can be at the apex of a design hierarchy.
@@ -620,7 +620,7 @@ package body Ghdllocal is
       return True;
    end Is_Top_Entity;
 
-   --  Disp contents design files FILES.
+   --  Display contents design files FILES.
    procedure Perform_Action (Cmd : Command_Find; Args : Argument_List)
    is
       pragma Unreferenced (Cmd);
@@ -1102,7 +1102,7 @@ package body Ghdllocal is
    is
       pragma Unreferenced (Cmd);
    begin
-      return "--disp-standard    Disp std.standard in pseudo-vhdl";
+      return "--disp-standard    Display std.standard in pseudo-VHDL";
    end Get_Short_Help;
 
    procedure Perform_Action (Cmd : Command_Disp_Standard;
@@ -1139,7 +1139,7 @@ package body Ghdllocal is
    is
       pragma Unreferenced (Cmd);
    begin
-      return "--find-top         Disp possible top entity in work library";
+      return "--find-top         Display possible top entity in work library";
    end Get_Short_Help;
 
    procedure Perform_Action (Cmd : Command_Find_Top;
